@@ -12,7 +12,7 @@ const Contact = (data: { translation: Translation["contact"] }) => {
     event.preventDefault();
     try {
       setStatus("sending");
-      const response = await fetch("https://jtnovellis.deno.dev/api/mail", {
+      const response = await fetch("/api/mail", {
         method: "POST",
         body: JSON.stringify({
           mail: form.mail,
