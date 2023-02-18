@@ -3,6 +3,12 @@ import { SMTPClient } from "https://deno.land/x/denomailer@1.6.0/mod.ts";
 
 export const handler: Handlers = {
   async POST(request: Request) {
+    console.log(
+      Deno.env.get("HOSTNAME"),
+      Deno.env.get("USERNAME"),
+      Deno.env.get("PASSWORD"),
+    );
+    console.log(Deno.env.get("FROM"), Deno.env.get("TO"));
     const client = new SMTPClient({
       connection: {
         hostname: Deno.env.get("HOSTNAME")!,
@@ -29,7 +35,9 @@ export const handler: Handlers = {
         await client.close();
         return new Response("", { status: Status.OK });
       } catch {
-        return new Response("", { status: Status.BadRequest });
+        return new Response("Error with mailing", {
+          status: Status.BadRequest,
+        });
       }
     }
     return new Response("OK", { status: Status.OK });
