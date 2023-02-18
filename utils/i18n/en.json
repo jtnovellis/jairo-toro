@@ -1,0 +1,132 @@
+{
+  "me": {
+    "text": "Hi! From my you can expect a person with great communication skills, intellectual curiosity, risk tolerance, proactivity and effective problem solving. Team player and innovative solutions."
+  },
+  "education": {
+    "title": "Education",
+    "milestones": [
+      {
+        "title": "Make It Real",
+        "date": "July 2022 - November 2022, Colombia",
+        "text": "FullStack Developer\nFocus: MERN Stack"
+      },
+      {
+        "title": "Universidad Del Norte",
+        "date": "January 2017 - September 2021, Colombia",
+        "text": "Master in Music\nFocus: Jazz & Popular Music"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "jobs": [
+      {
+        "name": "Make It Real",
+        "role": "FullStack Developer - Working student",
+        "date": "July 2022 - November 2022, Colombia",
+        "tasks": [
+          "Full responsive and functional web application development using the MERN Stack",
+          "Task management, database design, and development team leader."
+        ]
+      },
+      {
+        "name": "Freelance",
+        "role": "Full Stack Web Developer - Freelancer",
+        "date": "since November 2021, Colombia",
+        "tasks": [
+          "Development of backend applications with Node and express",
+          "Fixing bugs on varied services",
+          "Development of frontend applications with React and Next.js"
+        ]
+      },
+      {
+        "name": "Freelance",
+        "role": "Audio Engineer - Freelancer",
+        "date": "since November 2017, Colombia",
+        "tasks": [
+          "Musical production",
+          "Sound engineering",
+          "Audio mixing",
+          "Mastering"
+        ]
+      },
+      {
+        "name": "Universidad De La Guajira",
+        "role": "Proffesor - Part time",
+        "date": "June 2019 - October 2022, Colombia",
+        "tasks": [
+          "I taught Popular Harmony I and II, music theory and functional harmony. Additionally, I taught a diploma course focused on education, culture and music"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "sections": [
+      {
+        "title": "Programming languages",
+        "skills": ["JavaScript", "TypeScript", "Swift", "Python", "Rust"]
+      },
+      {
+        "title": "Libraries and Frameworks",
+        "skills": [
+          "React",
+          "React Native",
+          "Next.js",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "PostgreSQL",
+          "GraptQL",
+          "Fastify",
+          "Socket.io",
+          "Jest",
+          "Cypress",
+          "Redux Toolkit",
+          "Nest.js",
+          "Prisma",
+          "Deno",
+          "Fresh",
+          "Tailwind CSS",
+          "Bootstrap",
+          "Material UI"
+        ]
+      },
+      {
+        "title": "Further knowledge",
+        "skills": [
+          "Linux",
+          "MacOS",
+          "AWS",
+          "Docker",
+          "Strapi",
+          "Sanity",
+          "Firebase",
+          "Vercel",
+          "Git",
+          "HTML",
+          "SASS",
+          "SQL",
+          "NoSQL",
+          "English",
+          "SCRUM"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "contact": {
+    "title": "Contact",
+    "mail": "E-Mail",
+    "message": "Message",
+    "send": "Send",
+    "sent": "Thanks for the message!",
+    "failed": "Something went wrong :("
+  },
+  "footer": {
+    "imprint": "imprint",
+    "privacy": "privacy policy"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "me": {
+    "text": "¡Hola! De mi puedes esperar a una persona con grandes habilidades de comunicación, curiosidad intelectual, tolerancia al riesgo, proactividad y resolución efectiva de problemas. Soy un jugador de equipo y puedo ofrecer soluciones innovadoras."
+  },
+  "education": {
+    "title": "Educación",
+    "milestones": [
+      {
+        "title": "Make It Real",
+        "date": "Julio 2022 - Noviembre 2022, Colombia",
+        "text": "Desarrollador FullStack\nEnfocado en MERN Stack"
+      },
+      {
+        "title": "Universidad Del Norte",
+        "date": "Enero 2017 - Septiembre 2021, Colombia",
+        "text": "Maestría en Música\nEnfocado en Jazz y Música Popular"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experiencia",
+    "jobs": [
+      {
+        "name": "Make It Real",
+        "role": "Desarrollador FullStack - Estudiante trabajador",
+        "date": "Julio 2022 - Noviembre 2022, Colombia",
+        "tasks": [
+          "Desarrollo de aplicaciones web completamente responsivas y funcionales utilizando el MERN Stack",
+          "Administración de tareas, diseño de bases de datos y liderazgo del equipo de desarrollo."
+        ]
+      },
+      {
+        "name": "Freelance",
+        "role": "Desarrollador Web Full Stack - Freelancer",
+        "date": "desde Noviembre 2021, Colombia",
+        "tasks": [
+          "Desarrollo de aplicaciones backend con Node y Express",
+          "Corrección de errores en diversos servicios",
+          "Desarrollo de aplicaciones frontend con React y Next.js"
+        ]
+      },
+      {
+        "name": "Freelance",
+        "role": "Ingeniero de Audio - Freelancer",
+        "date": "desde Noviembre 2017, Colombia",
+        "tasks": [
+          "Producción musical",
+          "Ingeniería de sonido",
+          "Mezcla de audio",
+          "Masterización"
+        ]
+      },
+      {
+        "name": "Universidad De La Guajira",
+        "role": "Profesor - Medio tiempo",
+        "date": "Junio 2019 - Octubre 2022, Colombia",
+        "tasks": [
+          "Enseñé Armonía Popular I y II, teoría musical y armonía funcional. Además, enseñé un curso de diploma enfocado en educación, cultura y música."
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Habilidades",
+    "sections": [
+      {
+        "title": "Lenguajes de programación",
+        "skills": ["JavaScript", "TypeScript", "Swift", "Python", "Rust"]
+      },
+      {
+        "title": "Bibliotecas y frameworks",
+        "skills": [
+          "React",
+          "React Native",
+          "Next.js",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "PostgreSQL",
+          "GraphQL",
+          "Fastify",
+          "Socket.io",
+          "Jest",
+          "Cypress",
+          "Redux Toolkit",
+          "Nest.js",
+          "Prisma",
+          "Deno",
+          "Fresh",
+          "Tailwind CSS",
+          "Bootstrap",
+          "Material UI"
+        ]
+      },
+      {
+        "title": "Más conocimientos",
+        "skills": [
+          "Linux",
+          "MacOS",
+          "AWS",
+          "Docker",
+          "Strapi",
+          "Sanity",
+          "Firebase",
+          "Vercel",
+          "Git",
+          "HTML",
+          "SASS",
+          "SQL",
+          "NoSQL",
+          "English",
+          "SCRUM"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos"
+  },
+  "contact": {
+    "title": "Contacto",
+    "mail": "E-Mail",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "sent": "Muchas gracias por el mensaje!",
+    "failed": "Algo salió mal :("
+  },
+  "footer": {
+    "imprint": "imprint",
+    "privacy": "privacy policy"
+  }
+}
