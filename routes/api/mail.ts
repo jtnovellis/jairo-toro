@@ -6,18 +6,18 @@ export const handler: Handlers = {
     const client = new SmtpClient();
 
     await client.connectTLS({
-      hostname: Deno.env.get("HOSTNAME")!,
+      hostname: 'smtp.gmail.com!',
       port: 465,
-      username: Deno.env.get("USERNAME")!,
-      password: Deno.env.get("PASSWORD")!,
+      username: 'jtnovellis88@gmail.com',
+      password: 'hsvwsuponbegvnto',
     });
 
     const payload: { mail: string; message: string } | undefined = await request
       .json();
 
     await client.send({
-      from: Deno.env.get("FROM")!,
-      to: Deno.env.get("TO")!,
+      from: 'jtnovellis88@gmail.com',
+      to: 'jtnovellis88@icloud.com',
       subject: `New message from ${payload?.mail}`,
       content: payload?.message || "No mesaage content",
     });
