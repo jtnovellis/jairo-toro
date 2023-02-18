@@ -14,18 +14,18 @@ export const handler: Handlers = {
     const client = new SmtpClient();
 
     await client.connectTLS({
-      hostname: hostname,
+      hostname: Deno.env.get("HOSTNAME") || hostname,
       port: 465,
-      username: username,
-      password: password,
+      username: Deno.env.get("USERNAME") || username,
+      password: Deno.env.get("PASSWORD") || password,
     });
 
     const payload: { mail: string; message: string } | undefined = await request
       .json();
 
     await client.send({
-      from: from,
-      to: to,
+      from: Deno.env.get("FROM") || from,
+      to: Deno.env.get("TO") || to,
       subject: `New message from ${payload?.mail}`,
       content: payload?.message || "No mesaage content",
     });
