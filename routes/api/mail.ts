@@ -1,34 +1,37 @@
-import { Status } from "$fresh/server.ts";
-import { SmtpClient } from "smtp";
-import { load } from "https://deno.land/std@0.177.0/dotenv/mod.ts";
+import { Handlers, Status } from "$fresh/server.ts";
+import { SMTPClient } from "https://deno.land/x/denomailer@1.6.0/mod.ts";
 
-const env = await load();
-const password = env["PASSWORD"];
-const username = env["USERNAME"];
-const hostname = env["HOSTNAME"];
-const from = env["FROM"];
-const to = env["TO"];
+export const handler: Handlers = {
+  async POST(request: Request) {
+    const client = new SMTPClient({
+      connection: {
+        hostname: Deno.env.get("HOSTNAME")!,
+        port: 465,
+        tls: true,
+        auth: {
+          username: Deno.env.get("USERNAME")!,
+          password: Deno.env.get("PASSWORD")!,
+        },
+      },
+    });
 
-export async function handler(request: Request): Promise<Response> {
-  const client = new SmtpClient();
+    const payload: { mail: string; message: string } | undefined = await request
+      .json();
 
-  await client.connectTLS({
-    hostname: Deno.env.get("HOSTNAME") || hostname,
-    port: 465,
-    username: Deno.env.get("USERNAME") || username,
-    password: Deno.env.get("PASSWORD") || password,
-  });
-
-  const payload: { mail: string; message: string } | undefined = await request
-    .json();
-
-  await client.send({
-    from: Deno.env.get("FROM") || from,
-    to: Deno.env.get("TO") || to,
-    subject: `New message from ${payload?.mail}`,
-    content: payload?.message || "No mesaage content",
-  });
-
-  await client.close();
-  return new Response("OK", { status: Status.OK });
-}
+    if (payload) {
+      try {
+        await client.send({
+          from: Deno.env.get("from")!,
+          to: Deno.env.get("to")!,
+          subject: `New message from ${payload.mail}`,
+          content: payload.message,
+        });
+        await client.close();
+        return new Response("", { status: Status.OK });
+      } catch {
+        return new Response("", { status: Status.BadRequest });
+      }
+    }
+    return new Response("OK", { status: Status.OK });
+  },
+};
