@@ -8,7 +8,7 @@ export function Menu(data: { lang: State["lang"] }) {
     ">
       <Language lang={data.lang} />
       <a
-        href={`/cv-${data.lang}.pdf`}
+        href={`/cv-${data.lang || "en"}.pdf`}
         target="_blank"
         class="h-4 w-4 bg-gray-dark rounded-xl p-0.5 cursor-pointer group transition-colors border-2 border-transparent hover:border-gray-light"
       >
