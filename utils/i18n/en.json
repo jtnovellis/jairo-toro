@@ -65,7 +65,13 @@
     "sections": [
       {
         "title": "Programming languages",
-        "skills": ["JavaScript", "TypeScript", "Swift", "Python", "Rust"]
+        "skills": [
+          "JavaScript",
+          "TypeScript",
+          "Swift",
+          "Python(learning)",
+          "Rust(learning)"
+        ]
       },
       {
         "title": "Libraries and Frameworks",

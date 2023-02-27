@@ -65,7 +65,13 @@
     "sections": [
       {
         "title": "Lenguajes de programación",
-        "skills": ["JavaScript", "TypeScript", "Swift", "Python", "Rust"]
+        "skills": [
+          "JavaScript",
+          "TypeScript",
+          "Swift",
+          "Python(aprendiendo)",
+          "Rust(aprendiendo)"
+        ]
       },
       {
         "title": "Bibliotecas y frameworks",
@@ -89,7 +95,8 @@
           "Fresh",
           "Tailwind CSS",
           "Bootstrap",
-          "Material UI"
+          "Material UI",
+          "SwiftUI"
         ]
       },
       {
